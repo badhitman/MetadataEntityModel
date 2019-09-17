@@ -94,7 +94,7 @@ namespace MetadataEntityModel
         public List<TelegramUpdateModel> TelegramUpdates { get; set; }
 
         public List<eCommerceJournalModel> eCommerceJournal { get; set; }
-        
+
         public List<GalleryModel> Galleries { get; set; }
         #endregion
 
@@ -103,7 +103,9 @@ namespace MetadataEntityModel
             string ret_val = "";
             ret_val += IsDelete ? " [DELETE]" : "";
             ret_val += IsOff ? " [OFF]" : "";
-
+            ret_val += "[pk: ]" + Id;
+            ret_val += "[type: ]" + AccessLevel.ToString();
+            
             if (!string.IsNullOrEmpty(Username))
                 ret_val += " [username: " + Username + "]";
 
