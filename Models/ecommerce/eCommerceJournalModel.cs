@@ -42,5 +42,10 @@
         /// Тип базового объекта
         /// </summary>
         public TypesBaseObject TypeBaseObject { get; set; }
+
+        public override string ToString()
+        {
+            return SumBTC+" BTC"+System.Environment.NewLine+Client.ToString();
+        }
     }
 }
