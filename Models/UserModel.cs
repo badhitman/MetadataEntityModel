@@ -103,9 +103,9 @@ namespace MetadataEntityModel
             string ret_val = "";
             ret_val += IsDelete ? " [DELETE]" : "";
             ret_val += IsOff ? " [OFF]" : "";
-            ret_val += "[pk: "+ Id + "]";
-            ret_val += "[type: "+ AccessLevel.ToString() + "]";
-            
+            ret_val += "[pk: " + Id + "]";
+            ret_val += "[type: " + AccessLevel.ToString() + "]";
+
             if (!string.IsNullOrEmpty(Username))
                 ret_val += " [username: " + Username + "]";
 
@@ -113,7 +113,7 @@ namespace MetadataEntityModel
                 ret_val += " [email: " + Email + "]";
 
             if (TelegramId != 0)
-                ret_val += " [telegramId: " + TelegramId + "]";
+                ret_val += " [telegramId: " + TelegramId + "] " + Information;
 
             return ret_val.Trim();
         }

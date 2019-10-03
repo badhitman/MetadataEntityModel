@@ -45,7 +45,7 @@
 
         public override string ToString()
         {
-            return SumBTC+" BTC"+System.Environment.NewLine+Client.ToString();
+            return SumBTC + " BTC" + System.Environment.NewLine + Client.ToString();
         }
     }
 }
