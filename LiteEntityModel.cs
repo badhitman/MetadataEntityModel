@@ -20,7 +20,7 @@ namespace MetadataEntityModel
         /// </summary>
         [Display(Name = "Информация", Description = "Произвольная информация к объекту")]
         public string Information { get; set; }
-        
+
         /// <summary>
         /// Дата создания объекта
         /// </summary>
